@@ -9,3 +9,5 @@ wordcloud
 jupyter
 notebook
 pytest
+wordcloud
+scikit-learn
