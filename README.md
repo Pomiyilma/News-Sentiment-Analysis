@@ -35,7 +35,18 @@ This project explores a large-scale financial news dataset containing over 1.4 m
 - Jupyter Notebook
 - Git & GitHub Actions
 
-## Repository Structure
-- `notebooks/` → exploratory analysis notebooks
-- `requirements.txt` → project dependencies
-- `.github/workflows/` → CI/CD workflow configuration
+
+## Task 2 Progress
+
+Implemented:
+- Stock price data loading using pandas
+- Data quality inspection and missing value analysis
+- Time-series preprocessing
+- Simple Moving Average (SMA) computation
+- Exponential Moving Average (EMA) computation
+- Technical indicator visualizations
+
+Upcoming:
+- RSI analysis
+- MACD analysis
+- Correlation analysis between news sentiment and stock movement
