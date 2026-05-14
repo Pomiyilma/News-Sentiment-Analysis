@@ -1,52 +1,58 @@
-# Financial News Sentiment & Market Analysis
+# Financial News & Stock Movement Analysis
 
 ## Overview
-This project explores a large-scale financial news dataset containing over 1.4 million headlines collected between 2010 and 2020. The objective is to analyze publication trends, publisher activity, headline characteristics, and recurring financial themes in preparation for downstream sentiment analysis and stock movement prediction tasks.
 
-## Task 1 Objectives
-- Set up GitHub workflow and CI/CD
-- Perform exploratory data analysis (EDA)
-- Analyze headline statistics
-- Investigate publisher activity
-- Perform temporal analysis on publication dates
-- Extract keywords and recurring financial topics
-- Generate visualizations and insights
+This project investigates the relationship between financial news sentiment and stock market behavior using Natural Language Processing (NLP), technical analysis indicators, and statistical correlation methods.
 
-## Dataset Summary
-- Total Articles: 1,407,328
-- Columns:
-  - headline
-  - url
-  - publisher
-  - date
-  - stock
+The project was completed as part of a multi-phase financial analytics challenge focused on building a data analysis pipeline capable of linking financial news headlines with stock price movements.
 
-## Key Findings
-- Financial reporting is heavily centered around earnings, stock updates, analyst ratings, and trading activity.
-- Publisher activity is highly concentrated among major financial news providers.
-- The dataset spans nearly a decade of market-related reporting.
-- Timestamp inconsistencies were identified where some records lacked exact publication times.
+The workflow combines:
+- Exploratory Data Analysis (EDA)
+- Financial Technical Indicators
+- Sentiment Analysis
+- Correlation Analysis
+- Time-Series Visualization
 
-## Technologies Used
-- Python
-- Pandas
-- Matplotlib
-- Scikit-learn
-- Jupyter Notebook
-- Git & GitHub Actions
+---
 
+# Business Objective
 
-## Task 2 Progress
+The project focuses on two major analytical goals:
 
-Implemented:
-- Stock price data loading using pandas
-- Data quality inspection and missing value analysis
-- Time-series preprocessing
-- Simple Moving Average (SMA) computation
-- Exponential Moving Average (EMA) computation
-- Technical indicator visualizations
+1. **Sentiment Analysis**
+   - Extract sentiment from financial news headlines using NLP techniques
+   - Quantify headline tone using numerical sentiment scores
 
-Upcoming:
-- RSI analysis
-- MACD analysis
-- Correlation analysis between news sentiment and stock movement
+2. **Correlation Analysis**
+   - Measure the statistical relationship between news sentiment and daily stock returns
+   - Identify whether positive or negative news trends align with stock price movement
+
+The insights generated from this analysis can support:
+- Investment strategy development
+- Market trend monitoring
+- Risk assessment
+- Financial decision-making
+
+---
+
+# Project Structure
+
+```bash
+.
+├── data/
+│   ├── raw/
+│   └── yfinance/
+│
+├── notebooks/
+│   ├── task-1.ipynb
+│   ├── task-2.ipynb
+│   └── task-3.ipynb
+│
+├── .github/
+│   └── workflows/
+│       └── unittests.yml
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+
